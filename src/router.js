@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ErrorView from '@/views/ErrorView.vue'
+import CoinDetail from '@/views/CoinDetail.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,11 @@ export default new Router({
             path: '/about',
             name: 'about',
             component: AboutView
+        },
+        {
+            path: '/coin/:id',
+            name: 'coin-detail',
+            component: CoinDetail
         }, 
         {
             path: '*',
