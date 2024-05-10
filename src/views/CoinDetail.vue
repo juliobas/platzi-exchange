@@ -130,7 +130,7 @@
           return 0;
         }
 
-        const result = this.fromUsd ? this.converValue / this.asset.priceUsd : this.convertValue * this.asset.priceUsd;
+        const result = this.fromUsd ? this.convertValue / this.asset.priceUsd : this.convertValue * this.asset.priceUsd;
 
         return result.toFixed(4);
       },
